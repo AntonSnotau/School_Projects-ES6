@@ -48,6 +48,4 @@ Mając do dyspozycji tablicę z liczbami, zwróć i wyświetl :
 *  wynik dodawania wszystkich liczb z tablicy (suma liczb z tablicy)
 *  wynik mnożenia wszystkich liczb z tablicy (iloczyn liczb z tablicy)
 
-```JavaScript
-var years = [2, 3, 2, 3];
-```
+
