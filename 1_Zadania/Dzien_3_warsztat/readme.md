@@ -2,12 +2,12 @@
 
 ## Przygotowanie
 
-> Stwórz w pełni działające środowiko, które pozwoli Ci pisać korzystać z ES6.
-> Pamiętaj o:
-> - ```npm init```
-> - Zainstalowaniu odpowiednich modułów
-> - Ustawieniu Webpacka, plikiem wejściowym ma być `js/app.js`, wyjściowym `js/out.js`
-> Zanim cokolwiek zrobisz przeczytaj ten opis :)
+Stwórz w pełni działające środowiko, które pozwoli Ci pisać korzystać z ES6.
+Pamiętaj o:
+- ```npm init```
+- Zainstalowaniu odpowiednich modułów
+- Ustawieniu Webpacka, plikiem wejściowym ma być `js/app.js`, wyjściowym `js/out.js`
+Zanim cokolwiek zrobisz przeczytaj ten opis :)
 
 ## Zdolności matematyczne potrzebne do zrobienia tego warsztatu
 
@@ -16,15 +16,15 @@ Dodawanie liczb :)
 ## Na czym polega warsztat?
 
 * **Rozeznanie.**
-Jeśli otworzysz plik ```index.html``` zobaczysz, że mamy dwa kalkulatory. Pierwszy to kalkulator binarny. Drugi to kalkulator dziesiętny.
+Jeśli otworzysz plik ```index.html``` zobaczysz, że mamy dwa (nieostylowane) kalkulatory. Pierwszy to kalkulator binarny. Drugi to kalkulator dziesiętny.
 Kalkulator binarny jest już napisany, niestety dziesiętny jeszcze nie. Twoim zadaniem będzie:
 
-    * Dokończenie kalkulatora dziesiętnego tak, aby dodawał liczby dziesiętne
+    * Skonfiguruj WebPacka w taki sposób żeby generował style i dołączył do pliku HTML.
     * Połączenie wszystkich plików tak, żeby oba kalkulatory działały poprawnie.
+    * Dokończenie kalkulatora dziesiętnego tak, aby dodawał liczby dziesiętne.
 
 
 * **Zaplecze** W folderze js znajdziesz wszystkie potrzebne pliki. Plikiem wejściowym jest plik ```app.js```. To on zostaje przetworzony przez Webpack, który na jego podstawie tworzy plik ```out.js```. Plik ```out.js``` jest dodany do pliku ```index.html```.
-
 
 
 ## Jak powinny działać  kalkulatory?
@@ -70,26 +70,26 @@ Twoim zadaniem jest napisanie kalkulatora dziesiętnego oraz połączenie wszysk
  * Twoje zadanie to napisanie kalkulatora dziesiętnego. Jakie powinien mieć metody? Spójrz na schemat wyżej.
 
 Omówmy te metody od początku:
- * ```constructor()``` - jeśli zajrzymy do naszej klasy abstrakcyjnej ```Calculator``` to widzimy, że coś już się w nim dzieje. Jak wiesz po stworzeniu obiektu automatycznie jest wywoływany właśnie konstruktor. Zatem wszystkie ustawienia początkowe możemy zainicjować tutaj. Omówmy go dokładnie:     
+ * ```constructor()``` - jeśli zajrzymy do naszej klasy abstrakcyjnej (jeżeli nie pamiętasz czym jest klasa abstrakcyjna zajrzyj do slajdów z ES6) ```Calculator``` to widzimy, że coś już się w nim dzieje. Jak wiesz po stworzeniu obiektu automatycznie jest wywoływany właśnie konstruktor. Zatem wszystkie ustawienia początkowe możemy zainicjować tutaj. Omówmy go dokładnie:     
 ```JavaScript
-    //Podczas tworzenia obiektu możemy ustawic mu nazwę
-    this.name = selectorName;
-    //Znajdujemy również odpowiedni selektor
-    this.$selectorsName = $(selectorName);
+//Podczas tworzenia obiektu możemy ustawic mu nazwę
+this.name = selectorName;
+//Znajdujemy również odpowiedni selektor
+this.$selectorsName = $(selectorName);
 
-    //Tworzymy 3 tablice odpowiedzialne za:
-    this.firstNumberArray = []; // przechowywanie pierwszej liczby
-    this.secondNumberArray = []; // przechowywanie drugiej liczby
-    this.resultNumberArray = [0,0,0,0,0,0,0,0,0]; // przechowywanie wyniku
+//Tworzymy 3 tablice odpowiedzialne za:
+this.firstNumberArray = []; // przechowywanie pierwszej liczby
+this.secondNumberArray = []; // przechowywanie drugiej liczby
+this.resultNumberArray = [0,0,0,0,0,0,0,0,0]; // przechowywanie wyniku
 
-    //Inicjalizujemy eventy - czyli start :)
-    this.initEvents();
+//Inicjalizujemy eventy - czyli start :)
+this.initEvents();
 ```
 
  W klasie ```BinaryCalculator``` w konstruktorze jest jeszcze wywołana metoda``` getName()```, która wyświetla imię. Spróbuj w podobny sposób wyświetlić imie kalkulatora dziesiętnego.
 
 
- * ```initEvents()``` - to metoda, która ustawia event click, na odpowiedniej cyfrze. W przypadku kalkulatora binarnego po kliknięciu w cyfrę od razu zmienia się ona na przeciwną z 0 na 1 i na odwrót (Prosta sytuacja bo w systemie binarnym mamy tylko dwie liczby). Niestety nie możemy w ten sam sposób zmieniać cyfr w systemie dziesiętnym, gdyż byłoby to bardzo nie wygodne. (Np. gdyby ktoś chciał ustawić cyfrę 9 musiałby 9 razy klikać).
+ * ```initEvents()``` - to metoda, która ustawia event click, na każdym divie przetrzymującym cyfrę. W przypadku kalkulatora binarnego po kliknięciu w div od razu zmienia się ona na przeciwną, z 0 na 1 i na odwrót. Prosta sytuacja bo w systemie binarnym mamy tylko dwie liczby. Niestety nie możemy w ten sam sposób zmieniać cyfr w systemie dziesiętnym, gdyż byłoby to bardzo nie wygodne. (Np. gdyby ktoś chciał ustawić cyfrę 9 musiałby 9 razy klikać).
  Lepszym rozwiązaniem będzie pozwolenie użytkownikowi na wpisanie liczby z klawiatury. Spójrz na metodę ```initEvents()``` zaimplementowaną w klasie abstrakcyjnej. Co ona robi? Po kliknięciu w cyfrę wywołuje metodę ```changeNumber()``` -> przejdźmy zatem do tej metody.
 
  * ```changeNumber()``` - ta metoda jest również zdefiniowana w klasie abstrakcyjnej ```Calculator```, ale nic nie robi. Jeśli zajrzysz do niej, zauważysz informację, że należy ją zaimplementować w klasie dziedziczącej. W klasie ```BinaryCalculator``` jest już zaimplementowana i działa tak, że zwija lub rozwija dany element DOM z liczbą. Twoje zadanie to zaimplementowanie tej metody w kalkulatorze dziesiętnym tak, aby użytkownik mógł wpisać liczbę. Możesz się posłużyć atrybutem **contenteditable**. Nie wiesz jak działa? Użyj Google ;)
