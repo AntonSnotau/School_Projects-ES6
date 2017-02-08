@@ -60,7 +60,7 @@ Twoim zadaniem jest napisanie kalkulatora dziesiętnego oraz połączenie wszysk
 
 #### Rozbijmy to na kroki:
 
-**1. Konfiguracja Webpacka. **
+**1. Konfiguracja Webpacka.**
 
 Skonfiguruj Webpack w taki sposób, aby można było uruchomić projekt.
 
@@ -114,7 +114,7 @@ W klasie ```BinaryCalculator``` w konstruktorze jest jeszcze wywołana metoda```
 
  * ```updateResult() ```- zadaniem tej metody jest zaktualizowanie wyniku na stronie. Wynik mamy przechowywany w tablicy ```this.resultNumberArray```, więc na jej podstawie możemy wypełnić elementy DOM, określonymi wartościami.
 
-**3. Napisanie kalkulatora dziesiętnego **
+**3. Napisanie kalkulatora dziesiętnego**
 
 1. Na podsawie schematu klas (rysunek wyżej), stwórz odpowiednie metody oraz konstruktor  w klasie `DecCalculator`.
 
@@ -127,7 +127,7 @@ Lepszym rozwiązaniem będzie pozwolenie użytkownikowi na wpisanie liczby z kla
 Nadpisz metodę `changeNumber()` w klasie `DecCalculator`.
 Najprostszym sposobem będzie posłużenie się  atrybutem **contenteditable**. Dodaj go do klikniętego elementu (z klasą active) jako atrybut i ustaw mu wartość true. Możesz również wywołać na tym elemencie focus() np. `element.trigger("focus");`
 
-5. **Nadpisanie metody initEvents() ** Po wpisaniu liczby, nic się nie wydarzy, ponieważ musimy czekać na użytkownika. W związku z tym dobrze by było, gdyby to użytkownik mógł poinformować kalkulator, że już skończył wpisywać liczby i że chce je dodać.
+5. **Nadpisanie metody initEvents()** Po wpisaniu liczby, nic się nie wydarzy, ponieważ musimy czekać na użytkownika. W związku z tym dobrze by było, gdyby to użytkownik mógł poinformować kalkulator, że już skończył wpisywać liczby i że chce je dodać.
 Ustawmy zatem event click na znaku dodawania (na plusie). A gdzie inicjujemy wszystkie eventy? Tak, oczywiście w klasie ```initEvents()```. Wejdżmy zatem do niej ( w kalkulatorze dziesiętnym )
 Chcemy, aby event click był ustawiony, ale chcemy również przy kalkulatorze dziesiętnym dodać dodatkowy event click na znaku dodawania. Co musimy zrobić? Musimy rozszerzyć tą metodę. Pamiętasz jak wywołać metodę z klasy absrakcyjnej?
 
