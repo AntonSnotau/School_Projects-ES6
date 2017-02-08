@@ -1,7 +1,7 @@
 /* abstract */ class Calculator {
     constructor(selectorName) {
          this.name = selectorName;
-         this.$selectorsName = $(selectorName);
+         this.$calculatorDOMElement = $(selectorName);
 
          this.firstNumberArray = [];
          this.secondNumberArray = [];
@@ -43,7 +43,7 @@
    *  @return {string}
    */
    checkNumber() {
-       let root =  this.$selectorsName;
+       let root =  this.$calculatorDOMElement;
        let $firstNumber = root.children(".group-number").children("label:first-child");
        let $secondNumber = root.children(".group-number").children("label:nth-child(2)");
        let $resultNumber = root.children(".group-number").children(".result-bit");
@@ -59,7 +59,7 @@
    /* Set event click on number
    */
    initEvents() {
-        this.$selectorsName.find(".display-number").on('click', (event) => {
+        this.$calculatorDOMElement.find(".display-number").on('click', (event) => {
             const parentLabel = $(event.target).parent(".display-number");
             this.changeNumber(parentLabel);
         })

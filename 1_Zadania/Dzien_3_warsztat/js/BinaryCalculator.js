@@ -44,7 +44,7 @@ class BinaryCalculator extends Calculator{
     /* Method changing Result
     */
     updateResult() {
-         let root =  this.$selectorsName;
+         let root =  this.$calculatorDOMElement;
          let $resultNumber = root.children(".group-number").children(".result-bit");
          for(let i =  this.resultNumberArray.length - 1, j = 0; i >= 0 ; i--, j++) {
             let valueResult = parseInt( $resultNumber.eq(j).find(".active").text() );

@@ -44,21 +44,14 @@ Przykład:
     Wynik:   1 0 0 1 0    
 ```
 
+Jeśli wciąż nie rozumiesz zajrzyj tutaj: <br>
+Więcej: http://eduinf.waw.pl/inf/alg/006_bin/0012.php <br>
+Rysunkowe wyjaśnienie: http://www.wikihow.com/Add-Binary-Numbers
+
 
 ### Zasady dodawania liczb dziesiętnych.
 W dodawaniu liczb dziesiętnych należy również pamiętać o przeniesieniu.
 
-Zobacz przykłady przeniesienia:
-* 5 + 5 = 10 czyli "0" zostawiamy, a  "1" przenosimy o jedną pozycję dalej.
-* 5 + 6 = 11 czyli "1" zostawiamy, a  "1" przenosimy o jedną pozycję dalej.
-* 7 + 7 = 14 czyli "4" zostawiamy, a  "1" przenosimy o jedną pozycję dalej.
-
-Przykład:
-```JavaScript
-    Liczba1: 0 5 0 2 9
-    Liczba2: 0 6 0 0 8
-    Wynik:   1 1 0 3 7    
-```
 ## Twoje zadanie
 
 Twoim zadaniem jest napisanie kalkulatora dziesiętnego oraz połączenie wszyskich plików tak jak na schemacie poniżej.
@@ -75,7 +68,7 @@ Omówmy te metody od początku:
 //Podczas tworzenia obiektu możemy ustawic mu nazwę
 this.name = selectorName;
 //Znajdujemy również odpowiedni selektor
-this.$selectorsName = $(selectorName);
+this.$calculatorDOMElement = $(selectorName);
 
 //Tworzymy 3 tablice odpowiedzialne za:
 this.firstNumberArray = []; // przechowywanie pierwszej liczby
