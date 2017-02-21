@@ -2,7 +2,7 @@
 
 ### Przygotowanie
 
-> Stwórz w pełni działające środowiko, które pozwoli Ci pisać kod JavaScript w wersji 6.
+> Stwórz w pełni działające środowisko, które pozwoli Ci pisać kod JavaScript w wersji 6.
 >
 > Pamiętaj o:
 > - ```npm init```
@@ -54,7 +54,7 @@ Moje imię i nazwisko to: Chuck Norris
 
 ### Zadanie 3 (~ 2min - 5min)
 
-W pliku ```app.js``` stwórz funkcję, której celem będzie wypisanie w konsoli kilku linijkowego tekstu np:
+W pliku ```app.js``` stwórz funkcję, której celem będzie wypisanie w konsoli kilkulinijkowego tekstu np:
 
 ```HTML
 "Myślę, że jest wiele piękna
@@ -65,12 +65,12 @@ Herbie Hancock
 
 ### Zadanie 4 (~ 2min - 5min)
 
-W pliku ```app.js``` stwórz funkcję, która jako parametr będzie przyjmować tablicę. Twoim zadaniem jest wypisanie elementów tej tablicy (skorzystaj z operatora rozproszenia). Wywołaj funkcję z łańcucha szablonowego. 
+W pliku ```app.js``` stwórz funkcję, która jako parametr będzie przyjmować tablicę. Twoim zadaniem jest wypisanie elementów tej tablicy (skorzystaj z operatora rozproszenia). Wywołaj funkcję z łańcucha szablonowego.
 
 
 ### Zadanie 5 (~ 5min - 10min)
 
-W pliku ```app.js```  mając do dyspozycji obiekt button (przykład niżej), wypisz w konsoli następujący tekst: <br>
+W pliku ```app.js```  mając do dyspozycji obiekt button (przykład niżej), wypisz w konsoli następujący tekst:
 
 ```HTML
 To jest button.

@@ -28,7 +28,7 @@ module.exports = {
 
 ```JavaScript```
 class Animal {
-	construcotr(type){
+	constructor(type){
 		this.type = type;
 	}
 

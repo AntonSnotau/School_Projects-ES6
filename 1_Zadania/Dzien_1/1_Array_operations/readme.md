@@ -35,7 +35,7 @@ var animals = ["cat", "shrimp", "giraffe"];
 
 ### Zadanie 3 (~ 2min - 5min)
 
-Mając do dyspozycji tablicę z latami, stwórz nową tablicę, która będzie zawierała wiek osoby urodzonej danego roku. Wyświetl nową tablicę. 
+Mając do dyspozycji tablicę z latami, stwórz nową tablicę, która będzie zawierała wiek osoby urodzonej danego roku. Wyświetl nową tablicę.
 
 ```JavaScript
 var years = [1995, 1856, 2014, 1987];
@@ -43,9 +43,7 @@ var years = [1995, 1856, 2014, 1987];
 
 ### Zadanie 4 (~ 5min - 7min)
 
-Mając do dyspozycji tablicę z liczbami, zwróć i wyświetl :
+Mając do dyspozycji tablicę z liczbami, zwróć i wyświetl:
 
 *  wynik dodawania wszystkich liczb z tablicy (suma liczb z tablicy)
 *  wynik mnożenia wszystkich liczb z tablicy (iloczyn liczb z tablicy)
-
-

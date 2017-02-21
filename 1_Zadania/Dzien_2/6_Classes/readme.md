@@ -2,7 +2,7 @@
 
 ### Przygotowanie
 
-> Stwórz w pełni działające środowiko, które pozwoli Ci pisać kod JavaScript w wersji 6.
+> Stwórz w pełni działające środowisko, które pozwoli Ci pisać kod JavaScript w wersji 6.
 >
 > Pamiętaj o:
 > - ```npm init```
@@ -51,8 +51,8 @@ Na bazie klasy ```Kaczka``` stwórz kolejną o nazwie ```KrzyzowkaKaczka```. Nad
 
 ### Zadanie 4 (~ 5min - 7min)
 
-Stworzyłeś klasę ```Kaczka```. Mogą z niej dziedziczyć wszytkie kaczki. Twoim zadaniem teraz jest dodanie do odpowiedniej klasy  metody ```lec()```. Metoda ma wypisywać w konsoli tekst "Lecę".
+Stworzyłeś klasę ```Kaczka```. Mogą z niej dziedziczyć wszytkie kaczki. Twoim zadaniem teraz jest dodanie do odpowiedniej klasy metody ```lec()```. Metoda ma wypisywać w konsoli tekst "Lecę".
 
 ### Zadanie 5 (~ 5min - 7min)
 Na bazie  klasy ```Kaczka``` stwórz kolejną o nazwie ```GumowaKaczka```. Nadpisz odpowiednio konstruktor, tak aby podczas wywoływania metody ```wyswietl()``` typ kaczki zmienił się na "gumowa". Stwórz obiekt ```gumowaKaczucha```. Wywołaj dla niego wszystkie metody. Czy widzisz coś niepokojącego? ......Twoja gumowa kaczka potrafi latać!!
-Nadpisz odpowiednio metodę ```lec()``` tak, aby po jej wywołaniu w przypadku gumowej kaczki wypisywał się w konsoli tekst "gumowe kaczki nie umieją latać "
+Nadpisz odpowiednio metodę ```lec()``` tak, aby po jej wywołaniu w przypadku gumowej kaczki wypisywał się w konsoli tekst "gumowe kaczki nie potrafią latać :(".

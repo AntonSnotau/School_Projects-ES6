@@ -5,7 +5,7 @@
 
 ### Zadanie 1
 
-Stwórz funkcję (Arrow functions) o nazwie ```getNumbers```, która przyjmuje jako parametr tablicę z liczbami. Następnie mnoży każdy element tablicy przez dwa i zwraca wynik.
+Stwórz funkcję (Arrow function) o nazwie ```getNumbers```, która przyjmuje jako parametr tablicę z liczbami. Następnie mnoży każdy element tablicy przez dwa i zwraca wynik.
 
 Spróbuj posłużyć się jedną z metod (```forEach```, ```map``` lub ```reduce```). Pamiętaj, że znasz oprócz słówka ```var``` jeszcze ```const``` i ```let```.
 
@@ -24,7 +24,7 @@ console.log( day1.getAvgTemperature());
 
 ### Zadanie 3
 
-W pliku ```index.html```, jest  dodana biblioteka jQuery. Ustaw w pliku ```app.js``` event click na elementach button. 
+W pliku ```index.html```, jest  dodana biblioteka jQuery. Ustaw w pliku ```app.js``` event click na elementach button.
 Po kliknięciu w przycisk ma się rozwijać paragraf znajdujący się poniżej.
 Wewnątrz metody ```on``` użyj funkcji ze strzałką (Arrow functions).
 

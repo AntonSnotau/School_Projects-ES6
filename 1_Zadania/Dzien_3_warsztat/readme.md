@@ -2,7 +2,7 @@
 
 ## Przygotowanie
 
-Stwórz w pełni działające środowiko, które pozwoli Ci pisać korzystać z ES6.
+Stwórz w pełni działające środowisko, które pozwoli Ci pisać korzystać z ES6.
 Pamiętaj o:
 - ```npm init```
 - Zainstalowaniu odpowiednich modułów
@@ -133,7 +133,7 @@ Chcemy, aby event click był ustawiony, ale chcemy również przy kalkulatorze d
 
  Po rozszerzeniu dopisujemy nowy event, który po kliknięciu w plus wywoła metodę ```checkNumber()``` oraz ```updateResult()```.
 
-6. **Dodawanie liczb dziesiętnych** Jeżeli użytkownik kliknie w plus, powinno nastąpić dodanie liczb i update wyniku. Jeśli spojrzysz na metodę `checkNumber()` przypomnisz sobie, że wywołuje ona metodę `add()``, którą musisz napisać dla kalkulatora dziesiętnego. Spójrz na kalkulator binarny i na tej podstawie stwórz własny algorytm, który doda dwie liczby dziesiętne. Pamiętaj o przeniesieniu.
+6. **Dodawanie liczb dziesiętnych** Jeżeli użytkownik kliknie w plus, powinno nastąpić dodanie liczb i update wyniku. Jeśli spojrzysz na metodę `checkNumber()` przypomnisz sobie, że wywołuje ona metodę `add()`, którą musisz napisać dla kalkulatora dziesiętnego. Spójrz na kalkulator binarny i na tej podstawie stwórz własny algorytm, który doda dwie liczby dziesiętne. Pamiętaj o przeniesieniu.
 
 
 7. **Zmiana wyniku** - Po kliknięciu w naszego plusa oprócz dodania dwóch liczb jest wywołana jeszcze metoda `updateResult()`. Musimy ją nadpisać w kalkulatorze dziesiętnym. Jednym ze sposobów będzie sprawdzanie tablicy `this.resultNumberArray` pobieranie z niej wartości i wstawianie w odpowiednie miejsce w elemencie DOM.

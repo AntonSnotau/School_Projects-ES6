@@ -2,7 +2,7 @@
 
 ### Przygotowanie
 
-> Stwórz w pełni działające środowiko, które pozwoli Ci pisać kod JavaScript w wersji 6.
+> Stwórz w pełni działające środowisko, które pozwoli Ci pisać kod JavaScript w wersji 6.
 >
 > Pamiętaj o:
 > - ```npm init```

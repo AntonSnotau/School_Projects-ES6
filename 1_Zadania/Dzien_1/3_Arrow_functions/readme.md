@@ -2,7 +2,7 @@
 
 ### Przygotowanie
 
-> Stwórz w pełni działające środowiko, które pozwoli Ci pisać kod JavaScript w wersji 6.
+> Stwórz w pełni działające środowisko, które pozwoli Ci pisać kod JavaScript w wersji 6.
 >
 > Pamiętaj o:
 > - ```npm init```
@@ -55,7 +55,7 @@ W pliku ```app.js```  napisz funkcję, która sama się wywoła czyli (IIFE) i k
 
 ### Zadanie 6 (~ 10min - 12min)
 
-W pliku ```app.js``` napisz funckję, która jako parametr przyjmie liczbę całkowitą od 1-10. Ustaw domyślną wartość dla parametru. W funkcji uruchom funkcję setInterval. Niech jego zadaniem będzie wypisywanie na konsoli tekstu "Hello" oraz licznika, zliczającego, który raz już został uruchomiony setInterval. Jeśli licznik osiągnie wartość podaną do funkcji jako parametr, powinien zostać usunięty setInterval.
+W pliku ```app.js``` napisz funckję, która jako parametr przyjmie liczbę całkowitą od 1-10. Ustaw domyślną wartość dla parametru. W funkcji uruchom funkcję ```setInterval```. Niech jego zadaniem będzie wypisywanie w konsoli tekstu _"Hello"_ oraz licznika zliczającego, który raz już został uruchomiony ```setInterval```. Jeśli licznik osiągnie wartość podaną do funkcji jako parametr, powinien zostać usunięty setInterval.
 
 ### Zadanie 7 (~ 10min - 12min)
 
@@ -79,4 +79,4 @@ W pliku ```zadanie08.js``` jest stworzony obiekt ```dog```. Jego metoda ```setNa
 
 W pliku ```index.html``` jest stworzone kilka elementów  ```div``` zawierających ```span``` i listę ```ul```.
 Stwórz w pliku ```zadanie09.js``` kod, który spowoduje, że po najechaniu na element ```span```, rozwinie się lista ```ul```.
-Wykorzystaj funkcję strzałki (Arrow functions). 
+Wykorzystaj funkcję strzałki (Arrow function).
