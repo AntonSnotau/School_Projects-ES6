@@ -63,6 +63,8 @@ To jeden ze sposobów w jaki się uczymy"
 Herbie Hancock
 ```
 
+Wstaw tekst do elementu o klasie ```cite``` w pliku index.html
+
 ### Zadanie 4 (~ 2min - 5min)
 
 W pliku ```app.js``` stwórz funkcję, która jako parametr będzie przyjmować tablicę. Twoim zadaniem jest wypisanie elementów tej tablicy (skorzystaj z operatora rozproszenia). Wywołaj funkcję z łańcucha szablonowego.
@@ -86,3 +88,4 @@ const button = {
   padding: "20px",
 }
 ```
+Na podstawie danych z obiektu stwórz nowy element ```button``` i wstaw go na stronę. 
