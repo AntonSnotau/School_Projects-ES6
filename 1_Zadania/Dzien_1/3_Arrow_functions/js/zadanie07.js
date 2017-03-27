@@ -5,10 +5,7 @@ const App = function() {
 
 
 App.prototype.generateLinks = function() {
-    this.websites.forEach( (websiteName) => {
-        let url = 'https://' + websiteName + ".com";
-        this.links.push(url);
-    } );
+
 }
 
 

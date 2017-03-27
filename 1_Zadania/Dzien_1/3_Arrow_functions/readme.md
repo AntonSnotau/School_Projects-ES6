@@ -69,6 +69,7 @@ app.generateLinks();
 console.log(app.links) // ["https://onet.com", "https://wp.com", "https://facebook.com"]
 ```
 
+Wstaw wygenerowane adresy do elementów ```a``` w liście o klasie ```menu``` w pliku ```index.html```. Uzyj jQuery.
 
 ### Zadanie 8 (~ 2min - 3min)
 
