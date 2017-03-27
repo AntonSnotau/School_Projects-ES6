@@ -16,6 +16,7 @@ Cześć mam na imię lucy jestem stonogą i mam 20 nóg
 Cześć mam na imię Majkel jestem pająkiem i mam 8 nóg
 ```
 
+Wstaw te teksty w opodwiednie paragrafy na stronę html.
 
 #### Zadanie 2
 

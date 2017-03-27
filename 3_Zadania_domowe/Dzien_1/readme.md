@@ -11,7 +11,7 @@ Spróbuj posłużyć się jedną z metod (```forEach```, ```map``` lub ```reduce
 
 ### Zadanie 2
 
-Stwórz funkcję o nazwie ```Weather```, która będzie konstruktorem.  Stwórz obiekt na bazie tego konstruktora, któremu przekaż tablicę z 3 pomiarami temperatury w ciągu dnia. Rozszerz konstruktor ```Weather``` o metodę ```getAvgTemperature``` (dodaj ją do prototypu), której celem jest zwrócenie średniej temperatury dnia.
+Stwórz funkcję o nazwie ```Weather```, która będzie konstruktorem.  Stwórz obiekt na bazie tego konstruktora, któremu przekaż tablicę z 3 pomiarami temperatury w ciągu dnia. Rozszerz konstruktor ```Weather``` o metodę ```getAvgTemperature``` (dodaj ją do prototypu), której celem jest zwrócenie średniej temperatury dnia. Wstaw tą wartość do elementu o klasie ```avg```.
 
 Spróbuj posłużyć się jedną z metod (```forEach```, ```map``` lub ```reduce```). Pamiętaj, że znasz oprócz słówka ```var``` jeszcze ```const``` i ```let```.
 
