@@ -26,6 +26,8 @@ Następnie skommituj zmiany komendą `git commit -m "nazwa_commita"`
 * 2_Snippety
     * Tutaj znajdziesz kawałki kodu rozwiązujące różne problemy, mogą Ci się przydać w trakcie rozwiązywania zadań.
 
+* 3_Zadania_domowe
+    * Te zadania wykonaj samodzielnie w domu. Będą one sprawdzane przez mentora. Pamiętaj, aby każde zadanie było w funkcji i zwracało wartości opisane w jego tresci. Zadania dodatkowe są dla chętnych i ambitnych. Ty też jesteś, prawda? :). Zadania dodatkowe zrób w miarę możliwości, możesz je dosłać w każdej chwili. Zapytaj mentora do kiedy musisz oddać zadania podstawowe.
 
 Poszczególne zadania rozwiązuj w odpowiednich plikach.
 
